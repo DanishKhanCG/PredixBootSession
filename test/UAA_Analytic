@@ -1,0 +1,48 @@
+uaa instance
+uaa-analytic-danish1
+Pass@123
+
+
+hello-world-app-danish
+cf bs hello-world-app-danish uaa-analytic-danish1
+
+
+
+    "credentials": {
+     "issuerId": "https://71a70f76-ecb7-49dd-a952-42de65f761ad.predix-uaa-training.run.aws-usw02-pr.ice.predix.io/oauth/token",
+     "uri": "https://71a70f76-ecb7-49dd-a952-42de65f761ad.predix-uaa-training.run.aws-usw02-pr.ice.predix.io",
+     "zone": {
+      "http-header-name": "X-Identity-Zone-Id",
+      "http-header-value": "71a70f76-ecb7-49dd-a952-42de65f761ad"
+
+-- analytics-catalog-danish
+
+ "predix-analytics-catalog": [
+   {
+    "credentials": {
+     "catalog_uri": "https://predix-analytics-catalog-release.run.aws-usw02-pr.ice.predix.io",
+     "zone-http-header-name": "Predix-Zone-Id",
+     "zone-http-header-value": "b433a430-8241-4bf4-b567-ef05f00938ab",
+     "zone-oauth-scope": "analytics.zones.b433a430-8241-4bf4-b567-ef05f00938ab.user"
+    },
+
+
+-- analytics-runtime-danish
+  "predix-analytics-runtime": [
+   {
+    "credentials": {
+     "config_uri": "https://predix-analytics-config-release.run.aws-usw02-pr.ice.predix.io",
+     "execution_uri": "https://predix-analytics-execution-release.run.aws-usw02-pr.ice.predix.io",
+     "monitoring_uri": "https://predix-monitoring-service-release.run.aws-usw02-pr.ice.predix.io",
+     "scheduler_uri": "https://predix-scheduler-service-release.run.aws-usw02-pr.ice.predix.io",
+     "zone-http-header-name": "Predix-Zone-Id",
+     "zone-http-header-value": "d398ecbb-526b-4289-9efd-e31415ac384f",
+     "zone-oauth-scope": "analytics.zones.d398ecbb-526b-4289-9efd-e31415ac384f.user"
+    },
+
+
+"eyJhbGciOiJSUzI1NiJ9.eyJqdGkiOiJmZmRmOWQ4NS0zZmEwLTRiOGYtODI4Yi0zMDIxZWViMjRiNmYiLCJzdWIiOiJhZG1pbiIsInNjb3BlIjpbImNsaWVudHMucmVhZCIsImNsaWVudHMuc2VjcmV0IiwiaWRwcy53cml0ZSIsInVhYS5yZXNvdXJjZSIsInpvbmVzLjcxYTcwZjc2LWVjYjctNDlkZC1hOTUyLTQyZGU2NWY3NjFhZC5hZG1pbiIsImNsaWVudHMud3JpdGUiLCJjbGllbnRzLmFkbWluIiwiaWRwcy5yZWFkIiwic2NpbS53cml0ZSIsInNjaW0ucmVhZCJdLCJjbGllbnRfaWQiOiJhZG1pbiIsImNpZCI6ImFkbWluIiwiYXpwIjoiYWRtaW4iLCJncmFudF90eXBlIjoiY2xpZW50X2NyZWRlbnRpYWxzIiwicmV2X3NpZyI6ImQxZTliYjcyIiwiaWF0IjoxNDY0OTI5MTE4LCJleHAiOjE0NjQ5NzIzMTgsImlzcyI6Imh0dHBzOi8vNzFhNzBmNzYtZWNiNy00OWRkLWE5NTItNDJkZTY1Zjc2MWFkLnByZWRpeC11YWEtdHJhaW5pbmcucnVuLmF3cy11c3cwMi1wci5pY2UucHJlZGl4LmlvL29hdXRoL3Rva2VuIiwiemlkIjoiNzFhNzBmNzYtZWNiNy00OWRkLWE5NTItNDJkZTY1Zjc2MWFkIiwiYXVkIjpbImFkbWluIiwiY2xpZW50cyIsImlkcHMiLCJ1YWEiLCJ6b25lcy43MWE3MGY3Ni1lY2I3LTQ5ZGQtYTk1Mi00MmRlNjVmNzYxYWQiLCJzY2ltIl19.X-1J-0BOdrsyrX_m-YHfahnOaEaqz0BUKphdkzycQfBUrKgkJ1a6WEuWrg_QZNMzBLWPeoSZuzMgq0rAMgwwluzue1bdrn0YKEN3kSSvHpzQ0UBJWYMDP9_K7lsmuenUU8RaZpVVtz4ObnwVyYlDTtB9pLufdQ3VjozoWzoRIWJ1mDoQAUB-EBPe86LoAdHhmVW29eF0FSuHkBYVCEyJfK8QFnowTUDpmVhrc6GcvUAn-HqiikV2SNUa0d-eY8knoTIO2FwudKEELEtvIGhPLTtnHV2JnuPtl7Eenw9iKWoOGo92Lx2cb5PGrURj2rAFFNpGAUQ0WhASV-co6e0PPw
+
+
+uaac group add analytics.zones.b433a430-8241-4bf4-b567-ef05f00938ab analytics.zones.d398ecbb-526b-4289-9efd-e31415ac384f
+

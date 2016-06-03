@@ -1,0 +1,15 @@
+
+Time-series
+
+App :- machine-winddata-timeseries-service-danishkhan2_ts
+predix-timeseries
+
+"uri": "wss://gateway-predix-data-services.run.aws-usw02-pr.ice.predix.io/v1/stream/messages",
+"zone-http-header-value": "033d4404-5347-47a3-8117-729e48bb3590",
+
+predix-uaa-training
+
+ "uri": "https://4192c22c-407e-4336-b8d1-5753cdd1733f.predix-uaa-training.run.aws-usw02-pr.ice.predix.io",
+"http-header-value": "4192c22c-407e-4336-b8d1-5753cdd1733f"
+ 
+curl 'https://4192c22c-407e-4336-b8d1-5753cdd1733f.predix-uaa-training.run.aws-usw02-pr.ice.predix.io/oauth/token' -H 'Pragma: no-cache' -H 'content-type: application/x-www-form-urlencoded' -H 'Cache-Control: no-cache' -H 'authorization: Basic YXBwLWNsaWVudC1pZDo=' --data 'client_id=app-client-id&grant_type=client_credentials'

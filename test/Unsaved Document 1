@@ -1,0 +1,30 @@
+predix-seed-dev-danish 
+
+
+
+"issuerId": "https://ebda0ef1-f8e3-4817-87c3-285520ece934.predix-uaa-training.run.aws-usw02-pr.ice.predix.io/oauth/token",
+     "uri": "https://ebda0ef1-f8e3-4817-87c3-285520ece934.predix-uaa-training.run.aws-usw02-pr.ice.predix.io",
+password
+password
+
+
+client name
+danish_client_name
+client secret
+clientpassword
+
+
+User
+danish_user_name
+email
+danish.khan@email.com
+password
+password
+
+
+zone
+ebda0ef1-f8e3-4817-87c3-285520ece934
+
+
+--ACS
+ "oauth-scope": "predix-acs-training.zones.0144df3d-9593-4852-9f20-5eef4686fab0.user"
